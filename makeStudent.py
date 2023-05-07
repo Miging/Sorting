@@ -13,6 +13,15 @@ for i in years:
     year=i//2500
     studentnum.append((year+2016)*10000+number[year].pop())
 
+#중복확인
+def check_duplication(list):
+    if len(list)==len(set(list)):
+        return False
+    else:
+        return True
+    
+if(check_duplication(studentnum)): print("값이 중복되었습니다.")
+else: print("중복되지 않았습니다.")
 
 
 
@@ -28,6 +37,7 @@ for i in range(20000):
     name=generate_string(8)
     address=generate_string(100)
     lines.append(str(studentnum[i])+' '+name+' '+address)
+
 
 
 with open('numbers.txt', 'w') as f:
