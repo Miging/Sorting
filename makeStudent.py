@@ -1,7 +1,7 @@
 import random
 import string
 
-#2만개 뽑고 2500으로 나눔,0~2499 16년
+#2만개 뽑고 2500으로 나눔,ex)0~249916년
 years=random.sample(range(20000),20000)
 
 number=[]
